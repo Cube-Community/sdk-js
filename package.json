@@ -1,0 +1,31 @@
+{
+  "name": "@cube-community/sdk",
+  "version": "0.1.0",
+  "description": "Build applications on Cube Community's hosting: read your project's secrets with your machine's own identity, nothing to configure.",
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist", "README.md", "LICENSE"],
+  "engines": { "node": ">=18" },
+  "repository": { "type": "git", "url": "git+https://github.com/Cube-Community/sdk-js.git" },
+  "homepage": "https://cube.community/developers/hosting/secrets",
+  "bugs": { "url": "https://github.com/Cube-Community/sdk-js/issues" },
+  "keywords": ["cube-community", "secrets", "openbao", "workload-identity"],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "bun test",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.2.0",
+    "typescript": "^5.7.0"
+  }
+}
