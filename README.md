@@ -26,7 +26,13 @@ It only works on a Cube Community project's machine: elsewhere there is no metad
 
 ## More to come
 
-One module per Cube Community service, as they come: projects, databases and the others.
+Secrets are the first part. The SDK will cover Cube Community's services one module at a time (projects, databases
+and the others), and authenticate in the two places an application runs:
+
+- **on a project's machine**, as now: with the machine's workload identity, through the node's metadata service,
+  nothing to configure;
+- **anywhere else** (your computer, a CI): through Cube Community's public API, with an OAuth 2.0 sign-in or an API
+  token (to be decided), so the same code runs locally and in production.
 
 ## Development
 
