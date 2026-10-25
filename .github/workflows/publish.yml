@@ -26,4 +26,6 @@ jobs:
           node-version: 24
           registry-url: https://registry.npmjs.org
       - run: npm install -g npm@latest
-      - run: npm publish --provenance --access public
+      # The trusted publisher may only stage: the version goes live once a maintainer approves it with 2FA on npmjs.com.
+      # Trusted publishing adds the provenance on its own.
+      - run: npm stage publish --access public
