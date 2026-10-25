@@ -1,4 +1,4 @@
-# @cube-community/sdk
+# @cubecommunity/sdk
 
 The SDK for applications hosted by [Cube Community](https://cube.community): your project's machines read its
 [secrets](https://cube.community/developers/hosting/secrets) with their own
@@ -6,11 +6,11 @@ The SDK for applications hosted by [Cube Community](https://cube.community): you
 identity and the address of your project's services come from the node's metadata service (`169.254.169.254`).
 
 ```sh
-npm install @cube-community/sdk
+npm install @cubecommunity/sdk
 ```
 
 ```ts
-import { secrets } from '@cube-community/sdk'
+import { secrets } from '@cubecommunity/sdk'
 
 const apiKey = await secrets.get('mail/api-key')
 ```

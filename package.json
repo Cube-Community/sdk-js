@@ -1,5 +1,5 @@
 {
-  "name": "@cube-community/sdk",
+  "name": "@cubecommunity/sdk",
   "version": "0.1.0",
   "description": "Build applications on Cube Community's hosting: read your project's secrets with your machine's own identity, nothing to configure.",
   "license": "MIT",
